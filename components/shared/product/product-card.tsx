@@ -4,6 +4,7 @@ import React from 'react'
 
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const ProductCard = ({ product }: { product: any }) => {
   return (
     <Card className="w-full max-w-sm">

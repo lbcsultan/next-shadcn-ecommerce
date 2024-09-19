@@ -1,24 +1,13 @@
 import type { Metadata } from 'next'
-import localFont from 'next/font/local'
 import './globals.css'
 import { Poppins as FontSans } from 'next/font/google'
 import { cn } from '@/lib/utils'
+import React from 'react'
 
 const fontSans = FontSans({
   subsets: ['latin'],
   weight: ['400', '600'],
   variable: '--font-sans',
-})
-
-const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900',
-})
-const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '100 900',
 })
 
 export const metadata: Metadata = {
@@ -41,11 +30,6 @@ export default function RootLayout({
       >
         {children}
       </body>
-      {/* <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body> */}
     </html>
   )
 }
