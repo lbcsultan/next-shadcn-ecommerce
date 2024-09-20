@@ -25,7 +25,7 @@ export default async function UserButton() {
           <div className="flex items-center">
             <Button
               variant="ghost"
-              className="relative w-8 h-8 rounded-full ml-2"
+              className="relative w-16 h-8 rounded-full ml-2"
             >
               {session.user.name}
             </Button>
